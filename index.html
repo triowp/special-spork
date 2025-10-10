@@ -4,92 +4,162 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>VideoAlchemist - Digital Creator</title>
 </head>
 <body>
-    <header>
-    <div class="navbar">
-        <h1> VideoAlchemist </h1>
-        <div class="navbar_list">
-            <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Portfolio</li>
-                <li>Testimonials</li>
-                <li>Contact</li>
-            </ul>
-        </div>
-        <div class="navbar_icon">
-            <img src="/image/instagram.png" alt="">
-            <img src="/image/telegram.png" alt="">
-            <img src="/image/image.png" alt="">
-        </div>
+    <!-- Animated Background -->
+    <div class="animated-bg">
+        <div class="circle circle-1"></div>
+        <div class="circle circle-2"></div>
+        <div class="circle circle-3"></div>
     </div>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <span class="logo-icon">🎬</span>
+                <span class="logo-text">VideoAlchemist</span>
+            </div>
+            <div class="nav-menu">
+                <ul>
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                    <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+            <div class="social-icons">
+                <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+            </div>
+            <div class="mobile-menu-toggle">☰</div>
+        </nav>
     </header>
 
-    <div class="about">
-        <div>
-            <h3>Kerimbekov Tilek</h3>
-            <h1>Professional Vibe Coder</h1>
-            <p>Making Your Web More Cool</p>
-            <button type="button">Lets Talk</button>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <span class="greeting">Hello, I'm</span>
+                <h1 class="hero-title">Kerimbekov Tilek</h1>
+                <h2 class="hero-subtitle">Creative Digital Artist & Developer</h2>
+                <p class="hero-description">Transforming ideas into stunning digital experiences through code and creativity</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary">Let's Collaborate</button>
+                    <button class="btn btn-secondary">View Portfolio</button>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Projects</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">3+</span>
+                        <span class="stat-label">Years</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">25+</span>
+                        <span class="stat-label">Clients</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-container">
+                    <img src="/image/hero-image.jpg" alt="Tilek Kerimbekov">
+                    <div class="image-decoration"></div>
+                </div>
+            </div>
         </div>
-        <img src="/image/Vibe-coding-is-blowing-up-in-2025-Explore-more-paths-and-experiment-faster.webp" alt="">
-    </div>
+        <div class="scroll-indicator">
+            <span>Scroll Down</span>
+            <div class="scroll-arrow">↓</div>
+        </div>
+    </section>
 
     <!-- About Section -->
-    <section class="about-section"> 
+    <section id="about" class="about-section">
         <div class="container">
-            <h2>About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>I'm a passionate web developer and video editor who loves creating digital experiences that inspire and engage. With a keen eye for design and a love for clean code, I transform ideas into stunning reality.</p>
-                    <div class="about-stats">
-                        <div class="stat">
-                            <h3>50+</h3>
-                            <p>Projects Completed</p>
-                        </div>
-                        <div class="stat">
-                            <h3>3+</h3>
-                            <p>Years Experience</p>
-                        </div>
-                        <div class="stat">
-                            <h3>25+</h3>
-                            <p>Happy Clients</p>
+            <div class="section-header">
+                <span class="section-subtitle">Get To Know</span>
+                <h2 class="section-title">About Me</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-image-section">
+                    <div class="about-image-wrapper">
+                        <img src="/image/about-me.jpg" alt="About Me">
+                        <div class="experience-badge">
+                            <span class="experience-years">3+</span>
+                            <span class="experience-text">Years<br>Experience</span>
                         </div>
                     </div>
                 </div>
-                <div class="about-image">
-                    <img src="/image/about-me.jpg" alt="About Me">
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>I'm a passionate digital creator who bridges the gap between technology and artistry. My journey in web development and video editing has taught me that the best digital experiences come from understanding both the technical and creative aspects of a project.</p>
+                        <p>When I'm not coding or editing videos, you'll find me exploring new design trends, experimenting with motion graphics, or collaborating with fellow creators to bring innovative ideas to life.</p>
+                    </div>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <div class="highlight-icon">💡</div>
+                            <div class="highlight-content">
+                                <h4>Creative Problem Solver</h4>
+                                <p>I love turning complex challenges into elegant solutions</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon">🚀</div>
+                            <div class="highlight-content">
+                                <h4>Innovation Driven</h4>
+                                <p>Always exploring cutting-edge technologies and techniques</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Story Section -->
-    <section class="story-section">
+    <!-- Journey Section -->
+    <section class="journey-section">
         <div class="container">
-            <h2>My Story</h2>
-            <div class="story-timeline">
+            <div class="section-header">
+                <span class="section-subtitle">My Journey</span>
+                <h2 class="section-title">Professional Timeline</h2>
+            </div>
+            <div class="timeline">
                 <div class="timeline-item">
-                    <div class="timeline-icon">🎓</div>
+                    <div class="timeline-dot"></div>
                     <div class="timeline-content">
-                        <h3>2021 - Started Journey</h3>
-                        <p>Began my coding journey with HTML, CSS, and JavaScript. Fell in love with creating interactive web experiences.</p>
+                        <div class="timeline-year">2021</div>
+                        <h3>The Beginning</h3>
+                        <p>Started my journey into web development, mastering HTML, CSS, and JavaScript. Discovered my passion for creating interactive digital experiences.</p>
                     </div>
                 </div>
                 <div class="timeline-item">
-                    <div class="timeline-icon">💼</div>
+                    <div class="timeline-dot"></div>
                     <div class="timeline-content">
-                        <h3>2022 - First Client</h3>
-                        <p>Landed my first freelance project creating a website for a local business. This sparked my passion for helping others bring their visions to life.</p>
+                        <div class="timeline-year">2022</div>
+                        <h3>First Breakthrough</h3>
+                        <p>Landed my first major client project, developing a complete web solution for a local business. This experience shaped my understanding of client needs.</p>
                     </div>
                 </div>
                 <div class="timeline-item">
-                    <div class="timeline-icon">🚀</div>
+                    <div class="timeline-dot"></div>
                     <div class="timeline-content">
-                        <h3>2024 - VideoAlchemist</h3>
-                        <p>Launched my brand combining web development with video editing, creating comprehensive digital solutions for modern businesses.</p>
+                        <div class="timeline-year">2023</div>
+                        <h3>Skill Expansion</h3>
+                        <p>Expanded into video editing and motion graphics, learning Adobe Premiere Pro and After Effects to offer comprehensive digital solutions.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">2024</div>
+                        <h3>VideoAlchemist Born</h3>
+                        <p>Launched my personal brand, combining web development with video editing to create unique digital experiences for modern businesses.</p>
                     </div>
                 </div>
             </div>
@@ -99,50 +169,110 @@
     <!-- Skills Section -->
     <section class="skills-section">
         <div class="container">
-            <h2>My Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Frontend Development</h3>
-                    <div class="skills-list">
+            <div class="section-header">
+                <span class="section-subtitle">What I Do</span>
+                <h2 class="section-title">My Expertise</h2>
+            </div>
+            <div class="skills-container">
+                <div class="skills-categories">
+                    <div class="skill-category active" data-category="frontend">
+                        <div class="category-icon">💻</div>
+                        <h3>Frontend Development</h3>
+                    </div>
+                    <div class="skill-category" data-category="design">
+                        <div class="category-icon">🎨</div>
+                        <h3>Design & Video</h3>
+                    </div>
+                    <div class="skill-category" data-category="tools">
+                        <div class="category-icon">🛠️</div>
+                        <h3>Tools & Technologies</h3>
+                    </div>
+                </div>
+                <div class="skills-display">
+                    <div class="skill-group active" id="frontend">
                         <div class="skill-item">
-                            <span>HTML/CSS</span>
+                            <div class="skill-info">
+                                <span class="skill-name">HTML/CSS</span>
+                                <span class="skill-percentage">95%</span>
+                            </div>
                             <div class="skill-bar">
-                                <div class="skill-progress" style="width: 95%"></div>
+                                <div class="skill-progress" data-width="95"></div>
                             </div>
                         </div>
                         <div class="skill-item">
-                            <span>JavaScript</span>
+                            <div class="skill-info">
+                                <span class="skill-name">JavaScript</span>
+                                <span class="skill-percentage">88%</span>
+                            </div>
                             <div class="skill-bar">
-                                <div class="skill-progress" style="width: 88%"></div>
+                                <div class="skill-progress" data-width="88"></div>
                             </div>
                         </div>
                         <div class="skill-item">
-                            <span>React.js</span>
+                            <div class="skill-info">
+                                <span class="skill-name">React.js</span>
+                                <span class="skill-percentage">82%</span>
+                            </div>
                             <div class="skill-bar">
-                                <div class="skill-progress" style="width: 82%"></div>
+                                <div class="skill-progress" data-width="82"></div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Design & Video</h3>
-                    <div class="skills-list">
+                    <div class="skill-group" id="design">
                         <div class="skill-item">
-                            <span>Adobe Premiere</span>
+                            <div class="skill-info">
+                                <span class="skill-name">Adobe Premiere Pro</span>
+                                <span class="skill-percentage">92%</span>
+                            </div>
                             <div class="skill-bar">
-                                <div class="skill-progress" style="width: 92%"></div>
+                                <div class="skill-progress" data-width="92"></div>
                             </div>
                         </div>
                         <div class="skill-item">
-                            <span>After Effects</span>
+                            <div class="skill-info">
+                                <span class="skill-name">After Effects</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
                             <div class="skill-bar">
-                                <div class="skill-progress" style="width: 85%"></div>
+                                <div class="skill-progress" data-width="85"></div>
                             </div>
                         </div>
                         <div class="skill-item">
-                            <span>Figma</span>
+                            <div class="skill-info">
+                                <span class="skill-name">Figma</span>
+                                <span class="skill-percentage">90%</span>
+                            </div>
                             <div class="skill-bar">
-                                <div class="skill-progress" style="width: 90%"></div>
+                                <div class="skill-progress" data-width="90"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-group" id="tools">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Git & GitHub</span>
+                                <span class="skill-percentage">87%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="87"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Node.js</span>
+                                <span class="skill-percentage">78%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="78"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Photoshop</span>
+                                <span class="skill-percentage">83%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="83"></div>
                             </div>
                         </div>
                     </div>
@@ -150,64 +280,62 @@
             </div>
         </div>
     </section>
-    
 
-
-    <footer>
-    <div class="footer-container">
+    <!-- Footer -->
+    <footer class="footer">
         <div class="footer-content">
-            <div class="footer-section">
-                <h3>VideoAlchemist</h3>
-                <p>Creating digital experiences that inspire and engage. Let's bring your vision to life with modern web development and stunning video editing.</p>
-                <div class="footer-social">
-                    <img src="/image/instagram.png" alt="Instagram">
-                    <img src="/image/telegram.png" alt="Telegram">
-                    <img src="/image/image.png" alt="Other">
+            <div class="footer-main">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <span class="logo-icon">🎬</span>
+                        <span class="logo-text">VideoAlchemist</span>
+                    </div>
+                    <p class="footer-description">Transforming digital dreams into reality through innovative web development and captivating video content.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li>Web Development</li>
+                        <li>Video Editing</li>
+                        <li>UI/UX Design</li>
+                        <li>Motion Graphics</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Get In Touch</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> tilek@videoalchemist.com</p>
+                        <p><i class="fas fa-phone"></i> +996 XXX XXX XXX</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Bishkek, Kyrgyzstan</p>
+                    </div>
                 </div>
             </div>
             
-            <div class="footer-section">
-                <h4>Quick Links</h4>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#testimonials">Testimonials</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-            
-            <div class="footer-section">
-                <h4>Services</h4>
-                <ul>
-                    <li>Web Development</li>
-                    <li>Video Editing</li>
-                    <li>UI/UX Design</li>
-                    <li>Motion Graphics</li>
-                    <li>Branding</li>
-                </ul>
-            </div>
-            
-            <div class="footer-section">
-                <h4>Contact Info</h4>
-                <div class="contact-info">
-                    <p>📧 tilek@videoalchemist.com</p>
-                    <p>📱 +996 XXX XXX XXX</p>
-                    <p>📍 Bishkek, Kyrgyzstan</p>
-                </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 VideoAlchemist. Crafted with ❤️ by Tilek Kerimbekov</p>
             </div>
         </div>
-        
-        <div class="footer-bottom">
-            <p>&copy; 2024 VideoAlchemist. All rights reserved.</p>
-            <p>Made with ❤️ by Kerimbekov Tilek</p>
-        </div>
-    </div>
     </footer>
 
-
-
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js"></script>
     <script src="script.js"></script>
-    
 </body>
 </html>
