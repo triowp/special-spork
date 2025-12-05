@@ -602,6 +602,71 @@ header {
     transition: width 1s ease-in-out;
 }
 
+/* Introduce Section */
+.introduce-section {
+    text-align: center;
+    margin-top: 3rem;
+    padding: 2rem 0;
+}
+
+.btn-introduce {
+    background: var(--gradient-accent);
+    color: white;
+    font-size: 1.1rem;
+    padding: 1rem 2.5rem;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    box-shadow: var(--shadow-medium);
+}
+
+.btn-introduce:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-large);
+}
+
+.btn-introduce i {
+    font-size: 1rem;
+}
+
+.btn-introduce:disabled {
+    cursor: not-allowed;
+    opacity: 0.8;
+}
+
+/* Notification Styles */
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: var(--gradient-primary);
+    color: white;
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    box-shadow: var(--shadow-large);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transform: translateX(400px);
+    opacity: 0;
+    transition: all 0.3s ease;
+    z-index: 10000;
+}
+
+.notification.show {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.notification i {
+    font-size: 1.2rem;
+    color: #10f05a;
+}
+
 /* Footer */
 .footer {
     background: var(--dark-color);
